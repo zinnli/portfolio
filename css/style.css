@@ -1,7 +1,25 @@
+@font-face {
+  font-family: "GowunDodum-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "EliceDigitalBaeum";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_elice@1.0/EliceDigitalBaeum.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+i {
+  color: cadetblue;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "EliceDigitalBaeum";
 }
 ul,
 li {
@@ -9,37 +27,66 @@ li {
 }
 a {
   text-decoration: none;
-  color: white;
+  color: cadetblue;
 }
-/*aside-nav*/
-#aside-nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 10vh;
-  height: 100vh;
-  background-color: #fff;
-}
+
 #portfolio {
   display: flex;
   flex-direction: column;
-  /* position: relative; */
-  width: calc(100%-10vh);
+  width: calc(100%-12vh);
   min-height: 100%;
   height: auto;
   background-color: aquamarine;
-  margin-left: 10vh;
+  margin-left: 12vh;
   overflow-x: hidden;
 }
 
-/* head-home */
+/*aside-nav*/
+#aside-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10vh;
+  height: 94vh;
+  background-color: #fff;
+  margin: 3vh 1vh 4vh 1vh;
+  color: cadetblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.jin-logo {
+  width: 4vh;
+  height: 4vh;
+  margin: 0 auto;
+}
+.aside-nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1vh;
+  height: 40vh;
+}
+.aside-nav-list li a {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.aside-nav-list li a i {
+  font-size: 25px;
+  padding: 4px;
+}
+.aside-nav-list li a span {
+  display: none;
+}
+
+/* home */
 #home {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
   height: 100vh;
-  padding: 0 10vh 0 10vh;
   background-color: cadetblue;
 }
 .myprof {
@@ -54,6 +101,7 @@ a {
   width: 300px;
   height: 300px;
   border-radius: 50%;
+  border: 3px solid #fff;
 }
 .prof-but {
   margin-top: 30px;
@@ -66,8 +114,122 @@ a {
 .home-info {
   width: 50%;
   height: auto;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 800;
   line-height: 80px;
   color: #fff;
+}
+.home-info-sub {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  margin: 50px 0 20px 10px;
+}
+section:nth-child(1) {
+  margin: 0;
+}
+/*main - 공통 코드*/
+section {
+  width: 100%;
+  height: auto;
+  padding: 0 13vh 0 13vh;
+  margin: 15vh 0 15vh 0;
+  color: #333;
+}
+.sect-top {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 3vh;
+  font-size: 13px;
+  font-weight: 550;
+  background-color: antiquewhite;
+}
+.sect-line {
+  width: 7%;
+  height: 3px;
+  background-color: #666;
+  border: 0;
+}
+
+/*about*/
+#about {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #dcdcdc;
+}
+.about-title {
+  width: 100%;
+  height: auto;
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 1vh 1vh 1vh 1vh;
+  margin-bottom: 5vh;
+}
+.about-contents {
+  padding: 5vh 5vh 5vh 5vh;
+  border-radius: 5vh;
+  background-color: #fff;
+}
+
+/*skill*/
+#skill {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #dcdcdc;
+}
+.skill-title {
+  width: 100%;
+  height: auto;
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 1vh 1vh 1vh 1vh;
+  margin-bottom: 5vh;
+}
+.skill-contents {
+  padding: 5vh 5vh 5vh 5vh;
+  border-radius: 5vh;
+  background-color: #fff;
+}
+/*projects*/
+#proj {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #dcdcdc;
+}
+.proj-title {
+  width: 100%;
+  height: auto;
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 1vh 1vh 1vh 1vh;
+  margin-bottom: 5vh;
+}
+.proj-contents {
+  padding: 5vh 5vh 5vh 5vh;
+  border-radius: 5vh;
+  background-color: #fff;
+}
+/*contact*/
+#contact {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #dcdcdc;
+}
+.contact-title {
+  width: 100%;
+  height: auto;
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 1vh 1vh 1vh 1vh;
+  margin-bottom: 5vh;
+}
+.contact-contents {
+  padding: 5vh 5vh 5vh 5vh;
+  border-radius: 5vh;
+  background-color: #fff;
 }

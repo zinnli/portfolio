@@ -6,50 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>현진 프론트엔드 포트폴리오</title>
     <link rel="stylesheet" href="css/style.css" />
+        <!-- fontAwesome -->
+        <script 
+        src="https://kit.fontawesome.com/a991ae6b9e.js"
+        crossorigin="anonymous"
+      ></script>
   </head>
   <body>
     <div id="portfolio">
-      <!--첫페이지 - title-->
-      <header id="home">
+      <!--좌측 - nav-->
+      <nav id="aside-nav">
+        <img class="jin-logo" src="/images/hj-logo.png" alt="jin-logo" />
+        <ul class="aside-nav-list">
+          <li><a href='#home'><i class="fa fa-solid fa-house-chimney"></i><span class="home-word"> HOME</span></a></li>
+          <li><a href='#about'><i class="fa fa-solid fa-user-large"></i><span class="about-word"> ABOUT</span></a></li>
+          <li><a href='#skill'><i class="fa fa-solid fa-gears"></i><span class="skill-word"> SKILLS</span></a></li>
+          <li><a href='#proj'><i class="fa fa-light fa-sheet-plastic"></i><span class="proj-word"> PROJECTS</span></a></li>
+          <li><a href='#contact'><i class="fa fa-soild fa-phone"></i><span class="contact-word"> CONTACT</span></a></li>
+        </ul>
+        
+      </nav>
+      <main id="main-all">
+        <!--첫페이지 - title-->
+      <section id="home">
         <div class="myprof">
           <img class="profile" src="images/profile.jpg" alt="profile-character" />
           <a class="prof-but" href="#proj">MY PROJECTS</a>
         </div>
-        <p class="home-info">
+        <div class="home-info">
+        <p class="home-info-main">
           안녕하세요!<br />프론트엔드 개발자 <br />
           이현진입니다 :)
         </p>
-      </header>
-      <!--좌측 - nav-->
-      <nav id="aside-nav">
-        <img class="jin-logo" src="" alt="jin-logo" />
-        <ul class="aside-nav-list">
-          <li><img src="" alt="home" />HOME</li>
-          <li><img src="" alt="about" />ABOUT</li>
-          <li><img src="" alt="skills" />SKILLS</li>
-          <li><img src="" alt="projects" />PROJECTS</li>
-          <li><img src="" alt="contact" />CONTACT</li>
-          <a href="#home">TOP</a>
-        </ul>
-      </nav>
-      <main id="main-all">
+        <p class="home-info-sub">
+          한 번 시작하면 끝을 보는,<br>
+          꾸준한 성장을 이루는 개발자입니다.
+        </p>
+      </div>
+      </section>
         <!--본문 - about-->
         <section id="about">
-          <p class="sect-top">
-            <hr class="sect-line" />
-            <span class="about-info">INTRODUCE MYSELF</span>
-          </p>
+          <div class="sect-top">
+            <hr class="sect-line">
+            <span class="about-info"> &nbsp; INTRODUCE MYSELF</span></div>
           <p class="about-title">ABOUT ME</p>
           <div class="about-contents">
-            <p>저는~</p>
+            <p>저는 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요</p>
           </div>
         </section>
         <!--본문 - skills-->
         <section id="skill">
-          <p class="sect-top">
+          <div class="sect-top">
             <hr class="sect-line" />
-            <span class="skill-info">I CAN DO THIS</span>
-          </p>
+            <span class="skill-info"> &nbsp; I CAN DO THIS</span>
+          </div>
           <p class="skill-title">MY SKILLS</p>
           <div class="skill-contents">
             <div class="skill-html">
@@ -79,10 +89,10 @@
           </div></section>
         <!--본문 - projects-->
         <section id="proj">
-          <p class="sect-top">
+          <div class="sect-top">
             <hr class="sect-line" />
-            <span class="proj-info">I MADE THESE</span>
-          </p>
+            <span class="proj-info"> &nbsp; I MADE THESE</span>
+          </div>
           <p class="proj-title">PROJECTS</p>
           <div class="proj-cont proj-contents-01"></div>
           <div class="proj-cont proj-contents-02"></div>
@@ -90,18 +100,18 @@
         </section>
         <!--본문 - contact-->
         <section id="contact">
-            <p class="sect-top">
+            <div class="sect-top">
               <hr class="sect-line" />
-              <span class="contact-info">SAY HELLO</span>
-            </p>
+              <span class="contact-info"> &nbsp; SAY HELLO</span>
+            </div>
             <p class="contact-title">CONTACT ME</p>
             <div class="contact-contents">
               <p class="contact-phone">
-                <!--전화번호 이모지-->
+                <i class="fa fa-soild fa-phone"></i>
                 <p>010-7101-0376</p>
               </p>
               <p class="contact-email">
-                <!--이메일 이모지-->
+                <i class="far fa-regular fa-envelope"></i>
                 <p>hyunjin0376@naver.com</p>
               </p>
             </div>
@@ -115,5 +125,6 @@
       <!--하단 저작권-->
       <footer class="copyright"></footer>
     </div>
+
   </body>
 </html>
