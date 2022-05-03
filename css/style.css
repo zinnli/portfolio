@@ -1,14 +1,7 @@
 @font-face {
-  font-family: "GowunDodum-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff")
+  font-family: "NanumSquareRound";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff")
     format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "EliceDigitalBaeum";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_elice@1.0/EliceDigitalBaeum.woff2")
-    format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -19,7 +12,7 @@ i {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "EliceDigitalBaeum";
+  font-family: "NanumSquareRound";
 }
 ul,
 li {
@@ -30,56 +23,85 @@ a {
   color: cadetblue;
 }
 
+.right-top-nav > i {
+  display: none;
+  position: fixed;
+  top: 2vh;
+  right: 2vh;
+  font-size: 50px;
+  color: #fff;
+}
 #portfolio {
   display: flex;
   flex-direction: column;
-  width: calc(100%-12vh);
+  width: calc(100%-10vh);
   min-height: 100%;
   height: auto;
   background-color: #dcdcdc;
-  margin-left: 12vh;
+  margin-left: 10vh;
   overflow-x: hidden;
 }
 
 /*aside-nav*/
+label,
+input {
+  display: none;
+}
 #aside-nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 10vh;
-  height: 94vh;
+  height: 100vh;
   background-color: #fff;
-  margin: 3vh 1vh 4vh 1vh;
+  padding: 4vh 2vh 4vh 2vh;
   color: cadetblue;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: 0.4s ease-in-out;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
-.jin-logo {
-  width: 4vh;
-  height: 4vh;
-  margin: 0 auto;
-}
+
 .aside-nav-list {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 1vh;
-  height: 40vh;
+  height: 30vh;
 }
 .aside-nav-list li a {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
+  align-items: center;
+  width: 15vh;
+  height: 40px;
 }
-.aside-nav-list li a i {
+.jin-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10vh;
+  height: 10vh;
+  margin: -2vh;
+  transition: 0.4s ease-in-out;
+}
+.jin-logo img {
+  width: 4vh;
+  height: 4vh;
+  margin: 0 auto;
+}
+.aside-nav-list li a .fa {
   font-size: 25px;
-  padding: 4px;
+  width: 6vh;
+  text-align: center;
 }
 .aside-nav-list li a span {
   display: none;
+  font-weight: 800;
+  font-size: 15px;
+  margin-left: 10px;
 }
-
 /* home */
 #home {
   display: flex;
@@ -88,6 +110,7 @@ a {
   width: 100%;
   height: 100vh;
   background-color: cadetblue;
+  padding-top: 10vh;
 }
 .myprof {
   display: flex;
@@ -98,8 +121,8 @@ a {
   text-align: center;
 }
 .profile {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
   border: 3px solid #fff;
 }
@@ -141,7 +164,7 @@ section {
   align-items: center;
   width: 100%;
   height: 3vh;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 550;
 }
 .sect-line {
@@ -161,17 +184,20 @@ section {
 .about-title {
   width: 100%;
   height: auto;
-  font-size: 30px;
-  font-weight: bolder;
+  font-size: 35px;
+  font-weight: 800;
   padding: 1vh 1vh 1vh 1vh;
   margin-bottom: 5vh;
 }
 .about-contents {
+  font-size: 22px;
   padding: 5vh 5vh 5vh 5vh;
   border-radius: 5vh;
   background-color: #fff;
 }
-
+.about-contents p span {
+  font-weight: 600;
+}
 /*skill*/
 #skill {
   display: flex;
@@ -182,8 +208,8 @@ section {
 .skill-title {
   width: 100%;
   height: auto;
-  font-size: 30px;
-  font-weight: bolder;
+  font-size: 35px;
+  font-weight: 800;
   padding: 1vh 1vh 1vh 1vh;
   margin-bottom: 5vh;
 }
@@ -198,11 +224,10 @@ section {
 .skill-all div {
   width: 10vh;
   height: 10vh;
-  box-sizing: border-box;
 }
 .skill-all img {
   width: 10vh;
-  height: auto;
+  height: 10vh;
 }
 .skill-all p {
   margin-top: 1vh;
@@ -219,8 +244,8 @@ section {
 .proj-title {
   width: 100%;
   height: auto;
-  font-size: 30px;
-  font-weight: bolder;
+  font-size: 35px;
+  font-weight: 800;
   padding: 1vh 1vh 1vh 1vh;
   margin-bottom: 5vh;
 }
@@ -243,8 +268,8 @@ section {
 .contact-title {
   width: 100%;
   height: auto;
-  font-size: 30px;
-  font-weight: bolder;
+  font-size: 35px;
+  font-weight: 800;
   padding: 1vh 1vh 1vh 1vh;
   margin-bottom: 5vh;
 }
@@ -259,7 +284,7 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 550;
 }
 .contact-email {
@@ -296,15 +321,368 @@ section:last-child {
   height: 10vh;
 }
 
+@media (min-width: 961px) {
+  /*hover 사이드바*/
+  #aside-nav:hover {
+    width: 22vh;
+  }
+  #aside-nav:hover .jin-logo {
+    width: 22vh;
+  }
+  #aside-nav:hover li span {
+    display: flex;
+  }
+  .aside-nav-list li:hover {
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px cadetblue;
+    cursor: pointer;
+  }
+}
 /*반응형*/
+
 @media (max-width: 1280px) {
   /*데스크탑*/
-}
-@media (max-width: 1024px) {
-  /*데스크탑*/
+  /*aside-nav*/
+  /* home */
+  .profile {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+  }
+  .prof-but {
+    margin-top: 30px;
+    padding: 12px 35px 12px 35px;
+    font-weight: 600;
+    color: cadetblue;
+    border-radius: 5px;
+    background-color: lightblue;
+  }
+  .home-info {
+    width: 50%;
+    height: auto;
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 80px;
+    color: #fff;
+  }
+  .home-info-sub {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    margin: 50px 0 20px 10px;
+  }
+  section:nth-child(1) {
+    margin: 0;
+  }
+  /*about*/
+  .about-contents {
+    font-size: 22px;
+    padding: 5vh 5vh 5vh 5vh;
+    border-radius: 5vh;
+    background-color: #fff;
+  }
+  .about-contents p span {
+    font-weight: 600;
+  }
+  /*skill*/
+  #skill {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #dcdcdc;
+  }
+  .skill-title {
+    width: 100%;
+    height: auto;
+    font-size: 35px;
+    font-weight: 800;
+    padding: 1vh 1vh 1vh 1vh;
+    margin-bottom: 5vh;
+  }
+  .skill-contents {
+    padding: 7vh 5vh 5vh 5vh;
+    border-radius: 5vh;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .skill-all div {
+    width: 10vh;
+    height: 10vh;
+  }
+  .skill-all img {
+    width: 10vh;
+    height: 10vh;
+  }
+  .skill-all p {
+    margin-top: 1vh;
+    text-align: center;
+    font-size: 13px;
+  }
+  /*projects*/
+  #proj {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #dcdcdc;
+  }
+  .proj-title {
+    width: 100%;
+    height: auto;
+    font-size: 35px;
+    font-weight: 800;
+    padding: 1vh 1vh 1vh 1vh;
+    margin-bottom: 5vh;
+  }
+  .proj-cont {
+    padding: 5vh 5vh 5vh 5vh;
+    border-radius: 5vh;
+    background-color: #fff;
+    margin-bottom: 5vh;
+  }
+  .proj-cont:last-child {
+    margin-bottom: 0;
+  }
+  /*contact*/
+
+  /*하단 저작권*/
 }
 @media (max-width: 960px) {
   /*노트북*/
+  #portfolio {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    background-color: #dcdcdc;
+    margin-left: 0;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  /*aside-nav*/
+  input[id="sidebar"] {
+    display: none;
+  }
+
+  #aside-nav {
+    position: fixed;
+    top: 0;
+    left: -18vh;
+    width: 18vh;
+    height: 100vh;
+    background-color: #fff;
+    padding: 2vh 1vh 2vh 1vh;
+    color: cadetblue;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 5;
+  }
+
+  .aside-nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30vh;
+  }
+  .aside-nav-list li {
+    display: flex;
+    align-items: center;
+    width: 10vh;
+    height: 40px;
+  }
+  .jin-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vh;
+    height: 10vh;
+  }
+  .aside-nav-list li a .fa {
+    font-size: 22px;
+    width: 6vh;
+    text-align: center;
+  }
+  .aside-nav-list li a span {
+    display: flex;
+    font-weight: 800;
+    font-size: 14px;
+    margin-left: 8px;
+  }
+
+  /*모바일 메뉴바 클릭 - 사이드바 보이게*/
+
+  #aside-nav label[for*="sidebar"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vh;
+    height: 100v;
+    z-index: -1;
+  }
+  header > div > label {
+    display: block;
+    position: relative;
+    width: 100%;
+    z-index: 4;
+  }
+  header div label i {
+    right: 1vh;
+    top: 1vh;
+    font-size: 35px;
+    position: fixed;
+    color: #fff;
+  }
+  .background {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vh;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    transition: all 0.35s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+  }
+
+  input[id="sidebar"]:checked ~ header label {
+    background-position: -24px 0;
+  }
+  input[id="sidebar"]:checked ~ #portfolio #aside-nav {
+    left: 0;
+  }
+  input[id="sidebar"]:checked ~ .background {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* home */
+  #home {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: cadetblue;
+    padding-top: 10vh;
+  }
+  .myprof {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+    text-align: center;
+  }
+  .profile {
+    width: auto;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid #fff;
+  }
+  .prof-but {
+    display: none;
+  }
+  .home-info {
+    width: 100%;
+    height: 50%;
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 60px;
+    text-align: center;
+    padding: 6vh;
+    color: #fff;
+  }
+  .home-info-sub {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    margin: 20px 0 0 0;
+  }
+  section:nth-child(1) {
+    margin: 0;
+  }
+  /*main - 공통 코드*/
+  section {
+    width: 100%;
+    height: auto;
+    padding: 5vh 6vh 5vh 6vh;
+    margin: 0;
+    color: #333;
+  }
+  .sect-top {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 3vh;
+    font-size: 10px;
+    font-weight: 550;
+  }
+  .sect-line {
+    width: 7%;
+    height: 3px;
+    background-color: #666;
+    border: 0;
+  }
+
+  /*about*/
+  .about-title {
+    font-size: 20px;
+  }
+  .about-contents {
+    font-size: 16px;
+  }
+  .about-contents p span {
+    font-weight: 600;
+  }
+  /*skill*/
+  .skill-title {
+    font-size: 20px;
+  }
+  .skill-all {
+    padding: 2vh;
+  }
+  .skill-all img {
+    width: 10vh;
+    height: auto;
+  }
+  .skill-all p {
+    font-size: 13px;
+  }
+  /*projects*/
+  .proj-title {
+    font-size: 20px;
+  }
+
+  /*contact*/
+  #contact {
+    padding-bottom: 0;
+  }
+  .contact-title {
+    font-size: 20px;
+  }
+  .contact-contents div {
+    font-size: 15px;
+    font-weight: 550;
+  }
+  section:last-child {
+    margin-bottom: 2vh;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 @media (max-width: 768px) {
   /*타블렛*/
@@ -321,70 +699,133 @@ section:last-child {
     background-color: #dcdcdc;
     margin-left: 0;
     overflow-x: hidden;
+    position: relative;
   }
 
-  /*
-  aside-nav*/
-  #aside-nav {
+  /*aside-nav*/
+  input[id="sidebar"] {
     display: none;
   }
-  /*#aside-nav {
+
+  #aside-nav {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 10vh;
-    height: 94vh;
+    left: -18vh;
+    width: 18vh;
+    height: 100vh;
     background-color: #fff;
-    margin: 3vh 1vh 4vh 1vh;
+    padding: 2vh 1vh 2vh 1vh;
     color: cadetblue;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: 0.4s ease-in-out;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-between;
+    z-index: 5;
   }
-  .jin-logo {
-    width: 4vh;
-    height: 4vh;
-    margin: 0 auto;
-  }
+
   .aside-nav-list {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 1vh;
-    height: 40vh;
+    height: 30vh;
   }
-  .aside-nav-list li a {
+  .aside-nav-list li {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
+    align-items: center;
+    width: 10vh;
+    height: 40px;
   }
-  .aside-nav-list li a i {
-    font-size: 25px;
-    padding: 4px;
+  .jin-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vh;
+    height: 10vh;
+  }
+  .aside-nav-list li a .fa {
+    font-size: 22px;
+    width: 6vh;
+    text-align: center;
   }
   .aside-nav-list li a span {
-    display: none;
-  }*/
+    display: flex;
+    font-weight: 800;
+    font-size: 14px;
+    margin-left: 8px;
+  }
+
+  /*모바일 메뉴바 클릭 - 사이드바 보이게*/
+
+  #aside-nav label[for*="sidebar"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vh;
+    height: 100v;
+    z-index: -1;
+  }
+  header > div > label {
+    display: block;
+    position: relative;
+    width: 100%;
+    z-index: 4;
+  }
+  header div label i {
+    right: 1vh;
+    top: 1vh;
+    font-size: 35px;
+    position: fixed;
+    color: #fff;
+  }
+  .background {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vh;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    transition: all 0.35s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+  }
+
+  input[id="sidebar"]:checked ~ header label {
+    background-position: -24px 0;
+  }
+  input[id="sidebar"]:checked ~ #portfolio #aside-nav {
+    left: 0;
+  }
+  input[id="sidebar"]:checked ~ .background {
+    opacity: 1;
+    visibility: visible;
+  }
 
   /* home */
   #home {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100vh;
     background-color: cadetblue;
+    padding-top: 10vh;
   }
   .myprof {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: auto;
+    height: 40vh;
     text-align: center;
   }
   .profile {
-    width: 80%;
+    width: auto;
     height: 100%;
     border-radius: 50%;
     border: 3px solid #fff;
@@ -414,8 +855,8 @@ section:last-child {
   section {
     width: 100%;
     height: auto;
-    padding: 5vh;
-    margin: 2vh 0 2vh 0;
+    padding: 5vh 6vh 5vh 6vh;
+    margin: 0;
     color: #333;
   }
   .sect-top {
@@ -423,7 +864,7 @@ section:last-child {
     align-items: center;
     width: 100%;
     height: 3vh;
-    font-size: 13px;
+    font-size: 10px;
     font-weight: 550;
   }
   .sect-line {
@@ -434,118 +875,48 @@ section:last-child {
   }
 
   /*about*/
-  #about {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    background-color: #dcdcdc;
-  }
   .about-title {
-    width: 100%;
-    height: auto;
-    font-size: 30px;
-    font-weight: bolder;
-    padding: 1vh 1vh 1vh 1vh;
-    margin-bottom: 5vh;
+    font-size: 20px;
   }
   .about-contents {
-    padding: 5vh 5vh 5vh 5vh;
-    border-radius: 5vh;
-    background-color: #fff;
+    font-size: 14px;
   }
 
   /*skill*/
-  #skill {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    background-color: #dcdcdc;
-  }
   .skill-title {
-    width: 100%;
-    height: auto;
-    font-size: 30px;
-    font-weight: bolder;
-    padding: 1vh 1vh 1vh 1vh;
-    margin-bottom: 5vh;
-  }
-  .skill-contents {
-    padding: 7vh 5vh 5vh 5vh;
-    border-radius: 5vh;
-    background-color: #fff;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    font-size: 20px;
   }
   .skill-all {
     padding: 2vh;
   }
-  .skill-all div {
-    width: 10vh;
-    height: 10vh;
-  }
   .skill-all img {
     width: 10vh;
-    height: fit-content;
+    height: auto;
   }
   .skill-all p {
-    margin-top: 1vh;
-    text-align: center;
-    font-size: 13px;
+    font-size: 12px;
   }
   /*projects*/
-  #proj {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    background-color: #dcdcdc;
-  }
   .proj-title {
-    width: 100%;
-    height: auto;
-    font-size: 30px;
-    font-weight: bolder;
-    padding: 1vh 1vh 1vh 1vh;
-    margin-bottom: 5vh;
+    font-size: 20px;
   }
-  .proj-cont {
-    padding: 5vh 5vh 5vh 5vh;
-    border-radius: 5vh;
-    background-color: #fff;
-    margin-bottom: 5vh;
-  }
-  .proj-cont:last-child {
-    margin-bottom: 0;
-  }
+
   /*contact*/
   #contact {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    background-color: #dcdcdc;
+    padding-bottom: 0;
   }
   .contact-title {
-    width: 100%;
-    height: auto;
-    font-size: 30px;
-    font-weight: bolder;
-    padding: 1vh 1vh 1vh 1vh;
-    margin-bottom: 5vh;
-  }
-  .contact-contents {
-    padding: 3vh;
-    border-radius: 5vh;
-    background-color: #fff;
-    margin-bottom: 3vh;
+    font-size: 20px;
   }
   .contact-contents div {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 550;
   }
-  .contact-email {
-    margin-top: 2vh;
-  }
   section:last-child {
-    margin-bottom: 0;
+    margin-bottom: 2vh;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
   }
 }

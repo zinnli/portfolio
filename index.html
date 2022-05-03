@@ -3,11 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-      user-scaleable="yes"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>현진 프론트엔드 포트폴리오</title>
     <link rel="stylesheet" href="css/style.css" />
     <!-- fontAwesome -->
@@ -17,10 +13,21 @@
     ></script>
   </head>
   <body>
+    <input type="checkbox" id="sidebar" />
+    <header>
+      <div class="right-top-nav">
+        <label for="sidebar" class="sidebar">
+          <i class="fa fa-solid fa-bars"></i>
+        </label>
+      </div>
+    </header>
+
     <div id="portfolio">
       <!--좌측 - nav-->
       <nav id="aside-nav">
-        <img class="jin-logo" src="images/hj-logo.png" alt="jin-logo" />
+        <div class="jin-logo">
+          <img src="images/hj-logo.png" alt="jin-logo" />
+        </div>
         <ul class="aside-nav-list">
           <li>
             <a href="#home"
@@ -85,18 +92,17 @@
           <p class="about-title">ABOUT ME</p>
           <div class="about-contents">
             <p>
-              저는 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요
-              안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요
-              안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요
-              안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요
-              안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요
-              안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요
-              안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요
-              안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요
-              안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요
-              안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요
-              안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요
-              안녕하세요 안녕하세요 안녕하세요 안녕하세요
+              영상 업무를 계속 해오다가 일하던 회사의 홈페이지를 보면서 개발자
+              업무에 흥미를 가지게 되었고,<br />
+              즉각적으로 나타나는 결과물에 매력을 느끼게 되었습니다.<br />
+              비전공자이다보니 개발하는데에 있어 어려움이 느끼는 부분이 많아
+              찾아보고 개인적으로 벨로그에 정리해두는 방법을 사용하여 알게된
+              부분들에 대해서는 최대한 익숙해지고, 내 것으로 받아들이기 위해
+              노력하고 있습니다.<br /><br />
+              <span
+                >시각적으로 많은 분들이 접근하기 좋은, 편안한 사이트를 만들고
+                싶습니다.</span
+              >
             </p>
           </div>
         </section>
@@ -128,6 +134,7 @@
                   alt="javascript-img"
                 />
               </div>
+              <p>할줄알아용</p>
               <p>할줄알아용</p>
               <p>할줄알아용</p>
             </div>
@@ -197,5 +204,6 @@
       <!--하단 저작권-->
       <footer class="copyright">2022. Lee hyunjin copyright.</footer>
     </div>
+    <label for="sidebar" class="background"></label>
   </body>
 </html>
