@@ -5,14 +5,17 @@
   font-weight: normal;
   font-style: normal;
 }
+
 i {
-  color: cadetblue;
+  color: #ffb648;
+  margin-right: 5px;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "NanumSquareRound";
+  font-family: "Gowun Dodum", sans-serif;
 }
 ul,
 li {
@@ -20,7 +23,7 @@ li {
 }
 a {
   text-decoration: none;
-  color: cadetblue;
+  color: #ffb648;
 }
 
 .right-top-nav > i {
@@ -55,7 +58,7 @@ input {
   height: 100vh;
   background-color: #fff;
   padding: 4vh 2vh 4vh 2vh;
-  color: cadetblue;
+  color: #ffb648;
   overflow: hidden;
   white-space: nowrap;
   transition: 0.4s ease-in-out;
@@ -109,7 +112,7 @@ input {
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-color: cadetblue;
+  background-color: #ffb648;
   padding-top: 10vh;
 }
 .myprof {
@@ -121,18 +124,19 @@ input {
   text-align: center;
 }
 .profile {
-  width: 350px;
-  height: 350px;
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
-  border: 3px solid #fff;
+  border: 5px solid #fff;
+  object-fit: cover;
 }
 .prof-but {
   margin-top: 30px;
   padding: 12px 35px 12px 35px;
   font-weight: 600;
-  color: cadetblue;
+  color: #ffb648;
   border-radius: 5px;
-  background-color: lightblue;
+  background-color: rgb(255, 240, 218);
 }
 .home-info {
   width: 50%;
@@ -172,6 +176,7 @@ section {
   height: 3px;
   background-color: #666;
   border: 0;
+  margin-right: 5px;
 }
 
 /*about*/
@@ -221,13 +226,18 @@ section {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+.skill-all{
+  padding : 5vh;
+}
 .skill-all div {
   width: 10vh;
   height: 10vh;
+
 }
 .skill-all img {
   width: 10vh;
-  height: 10vh;
+  height: fit-content;
+
 }
 .skill-all p {
   margin-top: 1vh;
@@ -287,9 +297,7 @@ section {
   font-size: 22px;
   font-weight: 550;
 }
-.contact-email {
-  margin-top: 2vh;
-}
+
 section:last-child {
   margin-bottom: 5vh;
 }
@@ -309,6 +317,9 @@ section:last-child {
   width: 5vh;
   height: auto;
   padding: 0;
+}
+.contact-button .insta-mobile{
+  display: none;
 }
 /*하단 저작권*/
 .copyright {
@@ -334,7 +345,7 @@ section:last-child {
   }
   .aside-nav-list li:hover {
     border-radius: 10px;
-    box-shadow: 2px 2px 2px cadetblue;
+    box-shadow: 2px 2px 2px #ffb648;
     cursor: pointer;
   }
 }
@@ -349,14 +360,15 @@ section:last-child {
     height: 300px;
     border-radius: 50%;
     border: 3px solid #fff;
+    object-fit: cover;
   }
   .prof-but {
     margin-top: 30px;
     padding: 12px 35px 12px 35px;
     font-weight: 600;
-    color: cadetblue;
+    color: #ffb648;
     border-radius: 5px;
-    background-color: lightblue;
+    background-color: rgb(255, 240, 218);
   }
   .home-info {
     width: 50%;
@@ -401,7 +413,7 @@ section:last-child {
     margin-bottom: 5vh;
   }
   .skill-contents {
-    padding: 7vh 5vh 5vh 5vh;
+    padding: 7vh 10vh 5vh 10vh;
     border-radius: 5vh;
     background-color: #fff;
     display: flex;
@@ -414,7 +426,7 @@ section:last-child {
   }
   .skill-all img {
     width: 10vh;
-    height: 10vh;
+    height: fit-content;
   }
   .skill-all p {
     margin-top: 1vh;
@@ -476,7 +488,7 @@ section:last-child {
     height: 100vh;
     background-color: #fff;
     padding: 2vh 1vh 2vh 1vh;
-    color: cadetblue;
+    color: #ffb648;
     overflow: hidden;
     white-space: nowrap;
     transition: 0.4s ease-in-out;
@@ -574,7 +586,7 @@ section:last-child {
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background-color: cadetblue;
+    background-color: #ffb347;
     padding-top: 10vh;
   }
   .myprof {
@@ -586,10 +598,11 @@ section:last-child {
     text-align: center;
   }
   .profile {
-    width: auto;
-    height: 100%;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     border: 3px solid #fff;
+    object-fit: cover;
   }
   .prof-but {
     display: none;
@@ -655,7 +668,7 @@ section:last-child {
   }
   .skill-all img {
     width: 10vh;
-    height: auto;
+    height: fit-content;
   }
   .skill-all p {
     font-size: 13px;
@@ -715,7 +728,7 @@ section:last-child {
     height: 100vh;
     background-color: #fff;
     padding: 2vh 1vh 2vh 1vh;
-    color: cadetblue;
+    color: #ffb648;
     overflow: hidden;
     white-space: nowrap;
     transition: 0.4s ease-in-out;
@@ -813,7 +826,7 @@ section:last-child {
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background-color: cadetblue;
+    background-color: #ffb648;
     padding-top: 10vh;
   }
   .myprof {
@@ -825,10 +838,13 @@ section:last-child {
     text-align: center;
   }
   .profile {
-    width: auto;
-    height: 100%;
+    max-width: 350px;
+    max-height: 350px;
+    width: 320px;
+    height: 320px;
     border-radius: 50%;
     border: 3px solid #fff;
+    object-fit: cover;
   }
   .prof-but {
     display: none;
@@ -836,7 +852,7 @@ section:last-child {
   .home-info {
     width: 100%;
     height: auto;
-    font-size: 30px;
+    font-size: 22px;
     font-weight: 800;
     line-height: 60px;
     text-align: center;
@@ -891,7 +907,7 @@ section:last-child {
   }
   .skill-all img {
     width: 10vh;
-    height: auto;
+    height: fit-content;
   }
   .skill-all p {
     font-size: 12px;
@@ -919,4 +935,11 @@ section:last-child {
     max-width: 100%;
     height: auto;
   }
+  .contact-button .insta{
+    display: block;
+  }
+  .contact-button .insta-web{
+    display: none;
+  }
+
 }
