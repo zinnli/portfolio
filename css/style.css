@@ -66,6 +66,7 @@ input {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
+  z-index: 9999;
 }
 
 .aside-nav-list {
@@ -73,6 +74,7 @@ input {
   flex-direction: column;
   justify-content: space-around;
   height: 30vh;
+
 }
 .aside-nav-list li a {
   display: flex;
@@ -156,6 +158,19 @@ section:nth-child(1) {
   margin: 0;
 }
 /*main - 공통 코드*/
+/*fade animation 용*/
+.fade-ani{
+  position: relative;
+  top:100px;
+  opacity: 0;
+  transition: top 1.1s cubic-bezier(0.5, 0, 0.4, 1), opactiy 0.5s linear;
+}
+.fade-in{
+  transition: top 1.1s cubic-bezier(0.5, 0, 0.4, 1), opactiy 0.5s linear;
+  top:0;
+  opacity: 1;
+}
+/*css 전체*/
 section {
   width: 100%;
   height: auto;
@@ -196,7 +211,7 @@ section {
 }
 .about-contents {
   font-size: 22px;
-  padding: 5vh 5vh 5vh 5vh;
+  padding: 5vh;
   border-radius: 5vh;
   background-color: #fff;
 }
@@ -219,7 +234,7 @@ section {
   margin-bottom: 5vh;
 }
 .skill-contents {
-  padding: 7vh 5vh 5vh 5vh;
+  padding:5vh;
   border-radius: 5vh;
   background-color: #fff;
   display: flex;
@@ -228,16 +243,16 @@ section {
 }
 .skill-all{
   padding : 5vh;
+  text-align: center;
 }
 .skill-all div {
-  width: 10vh;
-  height: 10vh;
+  width: 12vh;
+  height: 12vh;
 
 }
 .skill-all img {
-  width: 10vh;
-  height: fit-content;
-
+  width: fit-content;
+  height: 10vh;
 }
 .skill-all p {
   margin-top: 1vh;
@@ -665,10 +680,16 @@ section:last-child {
   }
   .skill-all {
     padding: 2vh;
+    text-align: center;
   }
+  .skill-all div {
+    width: 12vh;
+    height: 12vh;
+  }
+
   .skill-all img {
-    width: 10vh;
-    height: fit-content;
+    width: fit-content;
+    height: 10vh;
   }
   .skill-all p {
     font-size: 13px;
@@ -904,10 +925,11 @@ section:last-child {
   }
   .skill-all {
     padding: 2vh;
+    text-align: center;
   }
   .skill-all img {
-    width: 10vh;
-    height: fit-content;
+    width: fit-content;
+    height: 8vh;
   }
   .skill-all p {
     font-size: 12px;
